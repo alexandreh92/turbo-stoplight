@@ -3,10 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./dist/main.cjs",
+  "types": "./dist/index.d.cts",
+  "bin": {
+    "turbo-stoplight-server": "./dist/main.cjs"
+  },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "tsup"
   },
   "devDependencies": {
     "@turbo-stoplight/eslint-config": "workspace:*",
@@ -21,6 +24,7 @@
     "typescript": "~5.7.2"
   },
   "dependencies": {
+    "kolorist": "^1.8.0",
     "yargs": "^17.7.2"
   },
   "peerDependencies": {

@@ -1,0 +1,4 @@
+{
+  "extends": "@turbo-stoplight/typescript-config/vite.json",
+  "include": ["src"]
+}
