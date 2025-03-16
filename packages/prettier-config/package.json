@@ -1,0 +1,12 @@
+{
+  "name": "@turbo-stoplight/prettier-config",
+  "version": "1.0.0",
+  "main": "prettier.config.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  }
+}
