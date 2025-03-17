@@ -4,8 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test-stoplight": "turbo-stoplight-server",
-    "build": "vite build"
+    "stoplight:start": "turbo-stoplight-server --port 4000 --task_id sandbox#build",
+    "stoplight:healthcheck": "wait-on tcp:localhost:4000",
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "command-that-needs-to-run-after-watch-build": "echo 'Hello, World!'"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -17,6 +20,7 @@
     "@turbo-stoplight/prettier-config": "workspace:*",
     "@turbo-stoplight/server": "workspace:*",
     "@turbo-stoplight/typescript-config": "workspace:*",
+    "@turbo-stoplight/vite-plugin": "workspace:*",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react": "^4.3.4",
@@ -26,6 +30,7 @@
     "globals": "^15.15.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "wait-on": "^8.0.3"
   }
 }

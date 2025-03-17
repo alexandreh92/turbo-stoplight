@@ -96,14 +96,16 @@ console.log(cyan(`${logPrefix} 🚀 Build not cached. Turning on Stoplight...`))
 const server = net.createServer((socket) => {
   socket.on('data', () => {
     console.log(
-      green(`${logPrefix} ✅ Build finished. Turning off Stoplight...`)
+      green(
+        `${logPrefix} ✅ Terminal signal received. Turning off Stoplight...`
+      )
     );
     server.close(() => process.exit(0));
   });
 });
 
 server.listen(port, () => {
-  console.log(cyan(`${logPrefix} 🚀 Stoplight listening on port ${port}`));
+  console.log(cyan(`${logPrefix} 🚦 Stoplight listening on port ${port}`));
 });
 
 process.on('SIGINT', () => {

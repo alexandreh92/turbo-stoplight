@@ -2,8 +2,23 @@
   "$schema": "https://turborepo.org/schema.json",
   "extends": ["//"],
   "tasks": {
+    "stoplight:start": {
+      "cache": false
+    },
+    "stoplight:healthcheck": {
+      "cache": false
+    },
     "build": {
       "outputs": ["dist/**", "build/**"],
+      "cache": false
+    },
+    "build:watch": {
+      "dependsOn": ["stoplight:healthcheck"],
+      "inputs": ["src/**"],
+      "outputs": ["dist/**"]
+    },
+    "command-that-needs-to-run-after-watch-build": {
+      "dependsOn": ["stoplight:start"],
       "cache": false
     }
   }
