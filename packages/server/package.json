@@ -1,7 +1,7 @@
 {
   "name": "@turbo-stoplight/server",
   "private": false,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Server component for Turbo Stoplight - a tool for managing persistent Turborepo pipelines",
   "author": "Alexandre Stapenhorst <eng.alexandreh@gmail.com> (https://github.com/alexandreh92)",
   "license": "MIT",

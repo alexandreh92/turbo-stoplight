@@ -1,5 +1,10 @@
 # Changelog
 
+## <small>0.2.1 (2025-03-17)</small>
+
+* chore: another fix on versioning ([fd8343f](https://github.com/alexandreh92/turbo-stoplight/commit/fd8343f))
+* chore: fix package.json script ([2dfddaf](https://github.com/alexandreh92/turbo-stoplight/commit/2dfddaf))
+
 ## 0.2.0 (2025-03-17)
 
 * chore: add missing metadata ([a894f43](https://github.com/alexandreh92/turbo-stoplight/commit/a894f43))
