@@ -10,6 +10,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
     "@commitlint/config-conventional": "^19.8.0",
+    "@release-it/conventional-changelog": "^10.0.0",
     "@turbo-stoplight/eslint-config": "workspace:*",
     "@turbo-stoplight/prettier-config": "workspace:*",
     "commitizen": "^4.3.1",
@@ -17,6 +18,7 @@
     "eslint": "^8.57.0",
     "husky": "^9.1.7",
     "prettier": "^3.2.5",
+    "release-it": "^18.1.2",
     "standard-version": "^9.5.0",
     "turbo": "^2.4.4"
   },

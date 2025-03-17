@@ -14,6 +14,9 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^19.8.0
         version: 19.8.0
+      '@release-it/conventional-changelog':
+        specifier: ^10.0.0
+        version: 10.0.0(release-it@18.1.2)
       '@turbo-stoplight/eslint-config':
         specifier: workspace:*
         version: link:packages/eslint-config
@@ -35,6 +38,9 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.5.3
+      release-it:
+        specifier: ^18.1.2
+        version: 18.1.2(@types/node@22.13.10)(typescript@5.7.3)
       standard-version:
         specifier: ^9.5.0
         version: 9.5.0
@@ -130,9 +136,6 @@ importers:
         specifier: ^17.7.2
         version: 17.7.2
     devDependencies:
-      '@release-it/conventional-changelog':
-        specifier: ^10.0.0
-        version: 10.0.0(release-it@18.1.2)
       '@turbo-stoplight/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
@@ -154,9 +157,6 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.5.3
-      release-it:
-        specifier: ^18.1.2
-        version: 18.1.2(@types/node@22.13.10)(typescript@5.7.3)
       tsup:
         specifier: ^8.4.0
         version: 8.4.0(typescript@5.7.3)
@@ -175,9 +175,6 @@ importers:
         specifier: ^1.8.0
         version: 1.8.0
     devDependencies:
-      '@release-it/conventional-changelog':
-        specifier: ^10.0.0
-        version: 10.0.0(release-it@18.1.2)
       '@turbo-stoplight/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
@@ -196,12 +193,12 @@ importers:
       prettier:
         specifier: ^3.2.5
         version: 3.5.3
-      release-it:
-        specifier: ^18.1.2
-        version: 18.1.2(@types/node@22.13.10)(typescript@5.7.3)
       tsup:
         specifier: ^8.4.0
         version: 8.4.0(typescript@5.7.3)
+      turbo:
+        specifier: ^2.4.4
+        version: 2.4.4
       typescript:
         specifier: ~5.7.2
         version: 5.7.3

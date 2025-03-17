@@ -35,15 +35,14 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@release-it/conventional-changelog": "^10.0.0",
     "@turbo-stoplight/eslint-config": "workspace:*",
     "@turbo-stoplight/prettier-config": "workspace:*",
     "@turbo-stoplight/typescript-config": "workspace:*",
     "@types/node": "^22.13.10",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "release-it": "^18.1.2",
     "tsup": "^8.4.0",
+    "turbo": "^2.4.4",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   },
