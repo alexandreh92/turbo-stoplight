@@ -3,7 +3,9 @@
   "git": {
     "commitMessage": "chore: release v${version}",
     "tagName": "v${version}",
-    "requireCleanWorkingDir": false
+    "requireCleanWorkingDir": false,
+    "tag": true,
+    "push": true
   },
   "npm": {
     "publish": false
@@ -13,9 +15,7 @@
   },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "preset": {
-        "name": "angular"
-      },
+      "preset": "conventionalcommits",
       "infile": "CHANGELOG.md"
     }
   }
