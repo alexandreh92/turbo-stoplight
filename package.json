@@ -27,5 +27,6 @@
   "name": "turbo-stoplight",
   "dependencies": {
     "@release-it/bumper": "^7.0.2"
-  }
+  },
+  "version": "0.1.0"
 }
