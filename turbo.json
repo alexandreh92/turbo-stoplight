@@ -1,6 +1,12 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
+    "@turbo-stoplight/server:release": {
+      "dependsOn": []
+    },
+    "@turbo-stoplight/vite-plugin:release": {
+      "dependsOn": []
+    },
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
@@ -10,6 +16,13 @@
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "release": {
+      "dependsOn": [
+        "@turbo-stoplight/server:release",
+        "@turbo-stoplight/vite-plugin:release"
+      ],
+      "cache": false
     }
   }
 }

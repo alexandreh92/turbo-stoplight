@@ -1,0 +1,19 @@
+{
+  "git": {
+    "commitMessage": "chore: release ${name} to v${version}",
+    "commit": false,
+    "tag": false,
+    "push": false
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": false
+  },
+  "plugins": {
+    "@release-it/conventional-changelog": {
+      "preset": "conventionalcommits"
+    }
+  }
+}

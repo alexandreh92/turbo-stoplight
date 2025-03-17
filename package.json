@@ -5,7 +5,8 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "postinstall": "husky"
+    "postinstall": "husky",
+    "release": "turbo run release && release-it"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",

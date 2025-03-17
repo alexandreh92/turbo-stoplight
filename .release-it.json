@@ -4,7 +4,7 @@
     "tagName": "v${version}"
   },
   "npm": {
-    "publish": true
+    "publish": false
   },
   "github": {
     "release": true
@@ -14,10 +14,5 @@
       "preset": "conventionalcommits",
       "infile": "CHANGELOG.md"
     }
-  },
-  "hooks": {
-    "before:init": [
-      "pnpm turbo run build --filter=@turbo-stoplight/vite-plugin --filter=@turbo-stoplight/server"
-    ]
   }
 }
