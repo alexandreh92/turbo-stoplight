@@ -23,5 +23,6 @@
     "turbo": "^2.4.4"
   },
   "packageManager": "pnpm@8.15.6",
-  "name": "turbo-stoplight"
+  "name": "turbo-stoplight",
+  "version": "0.1.0"
 }
