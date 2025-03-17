@@ -2,14 +2,16 @@
   "$schema": "https://unpkg.com/release-it@18/schema/release-it.json",
   "git": false,
   "npm": {
-    "publish": true
+    "publish": false
   },
   "github": {
     "release": false
   },
   "plugins": {
     "@release-it/conventional-changelog": {
-      "preset": "conventionalcommits"
+      "preset": {
+        "name": "angular"
+      }
     }
   }
 }

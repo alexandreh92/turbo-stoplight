@@ -6,7 +6,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "postinstall": "husky",
-    "release": "HUSKY=0 turbo run release && release-it --ci"
+    "release": "HUSKY=0 turbo run release && HUSKY=0 release-it --ci"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.0",
@@ -28,5 +28,5 @@
   "dependencies": {
     "@release-it/bumper": "^7.0.2"
   },
-  "version": "0.1.0"
+  "version": "0.2.0"
 }
