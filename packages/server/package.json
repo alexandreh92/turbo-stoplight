@@ -6,7 +6,7 @@
   "main": "./dist/main.cjs",
   "types": "./dist/main.d.cts",
   "bin": {
-    "turbo-stoplight-server": "./dist/main.cjs"
+    "turbo-stoplight-server": "dist/main.cjs"
   },
   "scripts": {
     "build": "tsup",
