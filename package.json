@@ -24,5 +24,8 @@
     "turbo": "^2.4.4"
   },
   "packageManager": "pnpm@8.15.6",
-  "name": "turbo-stoplight"
+  "name": "turbo-stoplight",
+  "dependencies": {
+    "@release-it/bumper": "^7.0.2"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "name": "@turbo-stoplight/vite-plugin",
   "private": false,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A Vite plugin tailored for Turbo Stoplight integration, automatically notifying a stoplight server after the first build run in persistent tasks.",
   "author": "Alexandre Stapenhorst <eng.alexandreh@gmail.com> (https://github.com/alexandreh92)",
   "license": "MIT",
@@ -32,7 +32,7 @@
     "verify": "tsc --noEmit",
     "prepublishOnly": "pnpm build",
     "prerelease": "pnpm build",
-    "release": "HUSKY=0 release-it"
+    "release": "HUSKY=0 release-it --ci"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^10.0.0",

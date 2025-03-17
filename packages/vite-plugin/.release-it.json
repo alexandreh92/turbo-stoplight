@@ -1,12 +1,8 @@
 {
-  "git": {
-    "commitMessage": "chore: release ${name} to v${version}",
-    "commit": false,
-    "tag": false,
-    "push": false
-  },
+  "$schema": "https://unpkg.com/release-it@18/schema/release-it.json",
+  "git": false,
   "npm": {
-    "publish": false
+    "publish": true
   },
   "github": {
     "release": false
